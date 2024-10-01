@@ -1,0 +1,23 @@
+interface printable{
+void print()
+}
+interface showable{
+void show()
+}
+class A7 implements printable,showable
+{
+public void print()
+{
+System.out.println("hello");
+}
+public void show()
+{
+System.out.println("welcome");
+}
+public static void main(String[]args)
+{
+A7 object=new A7();
+object.print();
+object.show();
+}
+}
